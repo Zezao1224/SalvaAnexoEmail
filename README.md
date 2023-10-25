@@ -9,11 +9,18 @@
 * * Porta: 995
 * * Requer SSL: Sim
 
+~~~c# 
+client.Connect("pop.mail.yahoo.com", 995, true);
+~~~
 Estas informações estão disponíveis no link: https://br.ajuda.yahoo.com/kb/SLN4724.html
 
 Também será necessário a criação de um app por meio da conta de quem irá se conectar ao servidor, esse app gerará uma senha que será trocada pela senha do user durante a autenticação.
 
 Esta senha pode ser criada seguindo os passos do seguinte link: https://br.ajuda.yahoo.com/kb/Gerar-e-gerenciar-senhas-de-aplicativo-de-terceiros-sln15241.html
+
+~~~c# 
+client.Authenticate("user", "senhaApp", AuthenticationMethod.UsernameAndPassword);
+~~~
 
 Após estes passos a conexão estará pronta para funcionar!
 
