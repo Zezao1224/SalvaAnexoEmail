@@ -1,6 +1,6 @@
 # Salva Anexo Email
 ### Objetivo
- Este console tem como objetivo estudar o método IMAP e POP para acesso de e-mail, aplicando na prática por meio da biblioteca OpenPop.
+ Este console tem como objetivo estudar o protocolo IMAP e POP para acesso de e-mail, aplicando na prática por meio da biblioteca OpenPop.
 
  ### Conexão 
   Para conectar a algum e-mail, primeiro é necessário procurar o servidor, porta e se requer SSL(Secure Sockets Layer) para aquele provedor. No caso do yahoo por exemplo:
